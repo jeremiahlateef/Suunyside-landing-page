@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fira+Code:wght@300;400&family=Fraunces:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fira+Code:wght@300;400&family=Fraunces:wght@600;700&display=swap");
+
 :root {
   --clr-primary-color-1: hsl(7, 99%, 70%);
   --clr-primary-color-2: hsl(51, 100%, 49%);
@@ -12,7 +16,12 @@
   --clr-sec-color-4: hsl(210, 4%, 67%);
   --clr-white: hsl(0, 0%, 100%);
 }
-*,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 ::after,
 ::before {
   margin: 0;
@@ -23,6 +32,24 @@ body {
   font-size: 18px;
   background: var(--clr-white);
   line-height: 1.25;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  font-family: "Fraunces", serif;
+
+  font-weight: 900;
+}
+h2,
+h3,
+h4 {
+  font-family: "Fraunces", serif;
+}
+p,
+li {
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
 }
 ul {
   list-style-type: none;
@@ -37,6 +64,7 @@ a {
   background: url("./images/mobile/image-header.jpg") center/cover no-repeat;
   min-height: 100vh;
   padding: 0;
+  margin: 0;
   position: relative;
 }
 @media screen and (min-width: 768px) {
@@ -151,25 +179,26 @@ a {
 }
 .arrow-svg {
   position: absolute;
-  top: 68%;
+  top: 67%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 @media screen and (min-width: 768px) {
   .arrow-svg {
-    top: 62%;
+    top: 60%;
   }
 }
 .brand {
-  min-width: 95vw;
+  min-width: 90vw;
 }
+
 .brand-one {
-  height: 50vh;
-  width: 100%;
+  min-height: 50vh;
+  min-width: 100%;
 }
 .brand-two {
-  height: 50vh;
-  width: 100%;
+  min-height: 50vh;
+  min-width: 100%;
   padding: 0 4rem;
   background: var(--clr-white);
   display: grid;
@@ -185,7 +214,8 @@ a {
 }
 .title {
   text-align: center;
-  font-size: 1.5rem;
+  margin-top: 2rem;
+  font-size: 1.2rem;
   color: var(--clr-sec-color-1);
   line-height: 1.25;
   font-weight: 900;
@@ -202,6 +232,7 @@ a {
   text-align: center;
   font-weight: 900;
   font-size: 1rem;
+  margin-bottom: 2rem;
 }
 .brand-link a {
   color: var(--clr-sec-color-1);
@@ -235,6 +266,17 @@ a {
   .brand-info {
     margin-bottom: 1.5rem;
   }
+  .title,
+  .brand-info,
+  .brand-link {
+    text-align: left;
+  }
+  .underline {
+    margin-right: 0;
+    margin-left: 0;
+    width: 8.5rem;
+  }
+
   .egg-one,
   .cup-one {
     display: none;
@@ -244,17 +286,17 @@ a {
     display: block;
   }
   .brand-one {
-    height: 50vh;
+    min-height: 50vh;
     min-width: 45vw;
   }
   .brand-two {
-    height: 50vh;
+    min-height: 50vh;
     min-width: 45vw;
     padding: 0 4rem;
     background: var(--clr-white);
     display: grid;
     align-items: center;
-    justify-content: flex-start;
+    justify-items: flex-start;
   }
   .one-grid {
     display: grid;
@@ -267,10 +309,15 @@ a {
   .one-image {
     order: 2;
   }
+  /* .one-grid,
+  .two-grid {
+    min-height: 50vh;
+  } */
 }
 .photo {
   height: 100vh;
   position: relative;
+  margin: 0;
 }
 .photo-one,
 .photo-two {
@@ -311,9 +358,13 @@ a {
     margin-left: auto;
     margin-right: auto;
   } */
+  .photo {
+    min-height: 100vh;
+  }
   .photo-info {
     max-width: 30rem;
     left: 50%;
+    top: 70%;
     transform: translate(-50%);
   }
 
@@ -434,9 +485,10 @@ a {
   display: grid;
   /* justify-content: center; */
   padding: 4rem 3rem;
+  min-width: 90vw;
 }
 .foot {
-  width: 20rem;
+  /* width: 20rem; */
   margin-right: auto;
   margin-left: auto;
 }
@@ -448,6 +500,7 @@ a {
   text-align: center;
 }
 .footer-links {
+  width: 20rem;
   display: flex;
   justify-content: space-evenly;
   text-transform: capitalize;
@@ -477,9 +530,11 @@ a {
 }
 
 .attribution {
-  font-size: 18px;
+  background: var(--clr-primary-color-3);
+  font-size: 1.2rem;
   text-align: center;
+  color: var(--clr-white);
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--clr-primary-color-7);
 }
