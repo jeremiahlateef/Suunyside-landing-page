@@ -383,6 +383,10 @@ a {
   .photo {
     min-height: 100vh;
   }
+  .photo-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
   .photo-info {
     max-width: 30rem;
     left: 50%;
