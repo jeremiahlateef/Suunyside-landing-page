@@ -195,7 +195,7 @@ a {
 }
 @media screen and (min-width: 768px) {
   .arrow-svg {
-    top: 60%;
+    top: 52%;
   }
   .modal {
     display: none;
