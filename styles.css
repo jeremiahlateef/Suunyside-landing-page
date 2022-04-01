@@ -75,6 +75,7 @@ a {
   .hero {
     background: url("./images/desktop/image-header.jpg") center/cover no-repeat;
     position: relative;
+    min-height: 80vh;
   }
   .head-info {
     min-width: 90vw;
@@ -361,14 +362,14 @@ a {
   color: var(--clr-primary-color-3);
   text-align: center;
   text-transform: capitalize;
-  margin-bottom: 2rem;
-  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
 }
 .photo-design-two {
   text-align: center;
   color: var(--clr-primary-color-3);
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 0.8rem;
   width: 23rem;
   line-height: 1.6;
 }
@@ -381,16 +382,17 @@ a {
     margin-right: auto;
   } */
   .photo {
-    min-height: 100vh;
+    height: 60vh;
   }
   .photo-center {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    min-height: 80vh;
   }
   .photo-info {
     max-width: 30rem;
     left: 50%;
-    top: 70%;
+    top: 60%;
     transform: translate(-50%);
   }
 
@@ -404,7 +406,7 @@ a {
 
 .testimonial {
   background: var(--clr-white);
-  min-height: 120vh;
+  min-height: 100vh;
   padding: 5rem 3rem;
 }
 .testimonial-title {
@@ -412,6 +414,7 @@ a {
   letter-spacing: 0.5rem;
   color: var(--clr-sec-color-4);
   text-align: center;
+  margin-top: -5rem;
 }
 .client {
   margin-top: 5rem;
@@ -460,9 +463,6 @@ a {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 2rem;
-  }
-  .testimonial {
-    min-height: 70vh;
   }
 }
 .advert {
