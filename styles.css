@@ -27,9 +27,15 @@ body {
   font-size: 18px;
   background: var(--clr-white);
   line-height: 1.25;
-  /* max-width: 100vw; */
 }
-
+main {
+  min-width: 95vw;
+}
+@media screen and (min-width: 768px) {
+  main {
+    min-width: 90vw;
+  }
+}
 h1 {
   font-family: "Fraunces", serif;
 
@@ -54,14 +60,16 @@ a {
 .section {
   min-width: 95vw;
 }
+.head-info {
+  min-width: 90vw;
+}
 .hero {
   background: url("./images/mobile/image-header.jpg") center/cover no-repeat;
   min-height: 100vh;
   padding: 0;
-  margin: 0;
   position: relative;
-  min-width: 95vw;
-  display: block;
+  /* min-width: 95vw; */
+  /* display: block; */
 }
 @media screen and (min-width: 768px) {
   .hero {
@@ -189,7 +197,7 @@ a {
 }
 .arrow-svg {
   position: absolute;
-  top: 69%;
+  top: 68%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
