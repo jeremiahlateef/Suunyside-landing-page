@@ -464,6 +464,11 @@ a {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 2rem;
   }
+  .testimonial {
+    background: var(--clr-white);
+    min-height: 70vh;
+    padding: 5rem 3rem;
+  }
 }
 .advert {
   min-width: 90vw;
