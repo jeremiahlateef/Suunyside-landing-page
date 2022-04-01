@@ -16,12 +16,7 @@
   --clr-sec-color-4: hsl(210, 4%, 67%);
   --clr-white: hsl(0, 0%, 100%);
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+*,
 ::after,
 ::before {
   margin: 0;
@@ -32,10 +27,9 @@ body {
   font-size: 18px;
   background: var(--clr-white);
   line-height: 1.25;
-  margin: 0 auto;
-  padding: 0;
-  box-sizing: border-box;
+  /* max-width: 100vw; */
 }
+
 h1 {
   font-family: "Fraunces", serif;
 
@@ -66,6 +60,8 @@ a {
   padding: 0;
   margin: 0;
   position: relative;
+  min-width: 95vw;
+  display: block;
 }
 @media screen and (min-width: 768px) {
   .hero {
@@ -73,7 +69,7 @@ a {
     position: relative;
   }
   .head-info {
-    width: 100%;
+    min-width: 90vw;
   }
 }
 .nav {
@@ -130,7 +126,8 @@ a {
 }
 .modal {
   background: var(--clr-white);
-  width: 25rem;
+  width: 20rem;
+  /* border-left: 25px solid red; */
   margin-right: auto;
   margin-left: auto;
   height: 18rem;
@@ -138,7 +135,15 @@ a {
   align-items: center;
   justify-content: center;
   text-align: center;
-  display: none;
+  /* display: none; */
+}
+.modal::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 25px solid red;
+  border-right: 25px solid red;
+  /* right: 10%; */
 }
 .modal-links a {
   display: inline-block;
@@ -160,9 +165,12 @@ a {
   font-weight: bolder;
   text-transform: uppercase;
 }
+.hide {
+  display: none;
+}
 .header-image {
   max-height: 90%;
-  width: 100%;
+  min-width: 95vw;
 }
 .hero-info {
   display: flex;
@@ -176,16 +184,21 @@ a {
   letter-spacing: 0.5rem;
   position: absolute;
   top: 20%;
+
+  min-width: 90vw;
 }
 .arrow-svg {
   position: absolute;
-  top: 67%;
+  top: 69%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 @media screen and (min-width: 768px) {
   .arrow-svg {
     top: 60%;
+  }
+  .modal {
+    display: none;
   }
 }
 .brand {
@@ -323,6 +336,7 @@ a {
 .photo-two {
   width: 100%;
   height: 100%;
+  display: block;
   object-fit: cover;
 }
 .photo-two {
