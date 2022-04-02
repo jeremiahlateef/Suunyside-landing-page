@@ -30,6 +30,7 @@ body {
 }
 main {
   min-width: 95vw;
+  overflow-x: hidden;
 }
 @media screen and (min-width: 768px) {
   main {
@@ -75,7 +76,7 @@ a {
   .hero {
     background: url("./images/desktop/image-header.jpg") center/cover no-repeat;
     position: relative;
-    min-height: 90vh;
+    min-height: 100vh;
   }
   .head-info {
     min-width: 90vw;
