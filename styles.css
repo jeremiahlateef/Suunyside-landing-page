@@ -24,7 +24,7 @@
   box-sizing: border-box;
 }
 body {
-  font-size: 18px;
+  font-size: 1rem;
   background: var(--clr-white);
   line-height: 1.25;
 }
@@ -32,14 +32,13 @@ main {
   min-width: 95vw;
   overflow-x: hidden;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 635px) {
   main {
     min-width: 90vw;
   }
 }
 h1 {
   font-family: "Fraunces", serif;
-
   font-weight: 900;
 }
 h2,
@@ -72,7 +71,7 @@ a {
   /* min-width: 95vw; */
   /* display: block; */
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 635px) {
   .hero {
     background: url("./images/desktop/image-header.jpg") center/cover no-repeat;
     position: relative;
@@ -97,7 +96,7 @@ a {
 .nav-logo {
   cursor: pointer;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 635px) {
   .nav-logo-one {
     display: none;
   }
@@ -203,7 +202,7 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 635px) {
   .arrow-svg {
     top: 52%;
   }
@@ -282,7 +281,7 @@ a {
 .cup-two {
   display: none;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 635px) {
   .title {
     margin-top: 1.5rem;
   }
@@ -377,7 +376,7 @@ a {
 .design-one {
   color: var(--clr-primary-color-4);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 635px) {
   /* .photoraphy {
     margin-left: auto;
     margin-right: auto;
@@ -413,9 +412,9 @@ a {
 .testimonial-title {
   text-transform: uppercase;
   letter-spacing: 0.5rem;
-  color: var(--clr-sec-color-4);
   text-align: center;
-  margin-top: -5rem;
+  font-size: 1.5rem;
+  color: var(--clr-sec-color-1);
 }
 .client {
   margin-top: 5rem;
@@ -459,7 +458,7 @@ a {
   text-align: center;
   color: var(--clr-sec-color-4);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 635px) {
   .testimonial-center {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -468,7 +467,10 @@ a {
   .testimonial {
     background: var(--clr-white);
     min-height: 70vh;
-    padding: 5rem 3rem;
+    padding: 0 3rem;
+  }
+  .testimonial-title {
+    margin-top: -3rem;
   }
 }
 .advert {
@@ -477,6 +479,7 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  margin-top: -5rem;
 }
 .adverts {
   /* height: 100%; */
@@ -494,7 +497,7 @@ a {
 .advert-image-big {
   display: none;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 635px) {
   .advert-image-big {
     display: grid;
   }
@@ -516,7 +519,7 @@ a {
   min-height: 50vh;
   display: grid;
   /* justify-content: center; */
-  padding: 4rem 3rem;
+  /* padding: 4rem 3rem; */
   min-width: 90vw;
 }
 .foot {
@@ -529,6 +532,7 @@ a {
   color: var(--clr-primary-color-3);
   font-weight: 900;
   margin-bottom: 2rem;
+  margin-top: 1.5rem;
   text-align: center;
 }
 .footer-links {
