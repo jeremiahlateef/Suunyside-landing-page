@@ -516,14 +516,10 @@ a {
 }
 .footer {
   background: var(--clr-primary-color-7);
-  min-height: 50vh;
   display: grid;
-  /* justify-content: center; */
-  /* padding: 4rem 3rem; */
   min-width: 90vw;
 }
 .foot {
-  /* width: 20rem; */
   margin-right: auto;
   margin-left: auto;
 }
@@ -540,7 +536,7 @@ a {
   display: flex;
   justify-content: space-evenly;
   text-transform: capitalize;
-  margin-bottom: 5rem;
+  margin-bottom: 3.5rem;
 }
 .foot-color {
   color: var(--clr-primary-color-3);
@@ -551,11 +547,11 @@ a {
 }
 .footer-icons {
   width: 10rem;
-  text-align: center;
   display: flex;
   justify-content: space-around;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 2rem;
 }
 .icon {
   color: var(--clr-primary-color-3);
